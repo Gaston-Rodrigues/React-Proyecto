@@ -2,7 +2,7 @@ import React from 'react';
 import "./styles.css";
 
 export default function ItemDetail({item}) {
-
+    
   return (
         <div className="card">
             <div>

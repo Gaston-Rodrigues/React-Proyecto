@@ -21,5 +21,4 @@ const Item = ({prod}) => {
     );
 };
 
-
 export default Item;

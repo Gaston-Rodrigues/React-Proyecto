@@ -29,7 +29,6 @@ const ItemListContainer = ()=>{
       let respuesta = await getItemsByCategoryFromDatabase(idCategory); setProductos(respuesta);
   }
 }
-
   useEffect(()=>{
     leerDatos() }, 
     [idCategory])

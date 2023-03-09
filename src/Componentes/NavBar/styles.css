@@ -5,32 +5,19 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+
 
   }
-.navbar > .container,
-.navbar > .container-fluid,
-.navbar > .container-sm,
-.navbar > .container-md,
-.navbar > .container-lg,
-.navbar > .container-xl,
-.navbar > .container-xxl {
+.navbar > .container{
 display: flex;
 flex-wrap: inherit;
 align-items: center;
 justify-content: space-between;
 }
 .navbar-brand {
-padding-top: var(--bs-navbar-brand-padding-y);
-padding-bottom: var(--bs-navbar-brand-padding-y);
-margin-right: var(--bs-navbar-brand-margin-end);
-font-size: var(--bs-navbar-brand-font-size);
 color: black;
 text-decoration: none;
 white-space: nowrap;
-}
-.navbar-brand:hover, .navbar-brand:focus {
-color: var(--bs-navbar-brand-hover-color);
 }
 
 .shadow {
