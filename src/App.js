@@ -1,30 +1,27 @@
-import './styles.css';
-import NavBar from './Componentes/NavBar/NavBar';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ItemDetailContainer from './Componentes/ItemDetailContainer/ItemDetailContainer';
-import ItemListContainer from './Componentes/ItemListContainer/ItemListContainer';
-
-
+import { Route, Routes } from 'react-router-dom';
+import { ItemDetailsContainer } from './components/itemDetail/ItemDetailsContainer';
+import { ItemListContainer } from './components/itemList/ItemListContainer';
+import { NavBar } from './components/navbar/NavBar';
+import { CartContext } from './context/CartContext';
+import { Cart } from './components/cart/Cart';
+import { WishlistContainer } from './components/wishlist/WishlistContainer';
 
 function App() {
-  return (
-    
-        <>
-        
-        <BrowserRouter>
-          <NavBar />
-            <Routes>
-              <Route path="/" element={<ItemListContainer />} />
-              <Route path="/items/:idProducto" element={<ItemDetailContainer />} />
-              <Route path="/category/:idCategory" element={<ItemListContainer />} />
-             
-            </Routes>
-        </BrowserRouter>
-        </>
-
+  return ( 
+    <>
+      <CartContext>
+        <NavBar />
+        <Routes>
+          <Route path='/' element={<ItemListContainer />} />
+          <Route path='/category/:id' element={<ItemListContainer />} />
+          <Route path='/category/:categoryid' element={<ItemListContainer />} />
+          <Route path='/item/:id' element={<ItemDetailsContainer />} />
+          <Route path='/wishlist' element={<WishlistContainer />} />
+          <Route path='/cart' element={<Cart />} />
+        </Routes>
+      </CartContext>
+    </>
   );
 }
-
-
 
 export default App;
