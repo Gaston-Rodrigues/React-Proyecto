@@ -11,7 +11,7 @@ JAVASCRIPT
 Installation
 A step by step guide that will tell you how to get the development environment up and running.
 
-$ git clone git@github.com:
+$ git clone git@github.com:https://github.com/Gaston-Rodrigues/React-Proyecto
 $ cd MI-PROYECTO/
 $ npm install react-router-dom
 $ npm install --save firebase
